@@ -1,0 +1,79 @@
+snippet imreact
+    import React, { Component, PropTypes } from 'react'
+    
+snippet cdm
+	componentDidMount() {
+		${1}
+	}
+
+snippet cdup
+	componentDidUpdate(prevProps, prevState) {
+		${1}
+	}
+
+snippet cwm
+	componentWillMount() {
+		${1}
+	}
+
+snippet cwr
+	componentWillReceiveProps(nextProps) {
+		${1}
+	}
+
+snippet cwun
+	componentWillUnmount() {
+		${1}
+	}
+
+snippet cwu
+	componentWillUpdate(nextProps, nextState) {
+		${1}
+	}
+
+snippet cx
+	cx({
+        ${1}: ${2}
+	})
+
+snippet pt
+    static propTypes = {
+		${1}: PropTypes.${2:string}
+    }
+
+snippet dp
+    static defaultProps = {
+        ${1}: ${2}
+    }
+
+snippet rcc
+    class ${1} extends ${2:Comopnent} {
+        static propTypes = {
+        }
+
+        static defaultProps = {
+        }
+        
+		render() {
+			return (
+				${3:<div />}
+			)
+		}
+    }
+
+snippet ren
+	render() {
+		return (
+			${1:<div />}
+		)
+	}
+
+snippet sst
+	setState({
+		${1}: ${2}
+	})
+
+snippet scu
+	shouldComponentUpdate(nextProps, nextState) {
+		${1}
+	}
